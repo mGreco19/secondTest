@@ -6,4 +6,5 @@ package entities;
  */
 public class forecast {
     //hey whatsup?
+    //www
 }
