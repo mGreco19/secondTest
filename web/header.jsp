@@ -1,11 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+<div id="header" style="width:100%; background-color: white;">
+ <div id="banner">
+     style="display: inline-block; width:80%; "> <img src="images/banner.jpg" alt="">
+ </div>
+</div>
