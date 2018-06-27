@@ -18,20 +18,21 @@ import model.model;
  *
  * @author Moises
  */
-@WebServlet(name = "service", urlPatterns = {"/service"})
+@WebServlet(name = "service", urlPatterns = {"/showForecast"})
 public class service extends HttpServlet {
 
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-          
+            throws ServletException, IOException{
+        switch(request.getServletPath()){
+            case "/showForecast":
+                this.showForecast(request, response);
+                break;
         }
     }
     
     protected void showForecast(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, SQLException{
+            throws ServletException, IOException{
         try{
             BufferedReader reader=request.getReader();
             Gson gson=new Gson();
